@@ -1,0 +1,470 @@
+a{
+    color:#333;
+}
+a:hover{
+    text-decoration: none;
+    color:#333;
+}
+
+/* 字体图标 */
+
+@font-face{
+	font-family: 'wjs';
+  	src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'), 
+  	url('../fonts/MiFie-Web-Font.svg') format('svg'), 
+  	url('../fonts/MiFie-Web-Font.ttf') format('truetype'), 
+ 	url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+.wjs_icon{
+	font-family: 'wjs';
+}
+
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+.wjs_icon_tel::before{
+    content: "\e909";
+}
+.wjs_icon_logo::before{
+    content: "\e920";
+}
+.wjs_icon_word::before{
+    content: "\e93e";
+}
+.wjs_icon_E903::before{
+    content: "\e903";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_E905::before{
+    content: "\e905";
+}
+.wjs_icon_E907::before{
+    content: "\e907";
+}
+.wjs_icon_E901::before{
+    content: "\e901";
+}
+.wjs_icon_E900::before{
+    content: "\e900";
+}
+.wjs_icon_E904::before{
+    content: "\e904";
+}
+.wjs_icon_E902::before{
+    content: "\e902";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_new01::before{
+    content: "\e90e";
+}
+.wjs_icon_new02::before{
+    content: "\e90f";
+}
+.wjs_icon_new03::before{
+    content: "\e910";
+}
+.wjs_icon_new04::before{
+    content: "\e911";
+}
+.wjs_icon_partner01::before{
+    content:"\e946";
+}
+.wjs_icon_partner02::before{
+    content: "\e92f";
+}
+.wjs_icon_partner03::before{
+    content: "\e92e";
+}
+.wjs_icon_partner04::before{
+    content: "\e92a";
+}
+.wjs_icon_partner05::before{
+    content: "\e929";
+}
+.wjs_icon_partner06::before{
+    content: "\e931";
+}
+.wjs_icon_partner07::before{
+    content: "\e92c";
+}
+.wjs_icon_partner08::before{
+    content: "\e92b";
+}
+.wjs_icon_partner09::before{
+    content: "\e92d";
+}
+
+
+
+.header{
+	height:40px;
+	border-bottom:1px solid #ccc;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+}
+.header .item{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.header .item + .item{
+	border-left: 1px solid #ccc;
+}
+.header .showCode{
+    font-size: 12px;
+    position: relative;
+    display: block;
+}
+.header .showCode .code{
+    position: absolute;
+    left:50%;
+    transform:translate(-50%);
+    top:39px;
+    border: 1px solid #ccc;
+    display: none;
+}
+.header .showCode:hover  img{
+    display:block;
+    border-top:1px solid #fff;
+}
+.header .time{
+    padding-left:5px;
+}
+.header .question{
+    padding-right:10px;
+}
+.header .btn-self{
+    padding: 3px 16px;
+    background: #e92322;
+    margin-right:5px;
+}
+/* 轮播和导航至今有默认的margin-bottom:20px */
+.navbar-self{
+    margin-bottom:0px;
+}
+/* 修改导航栏宽度 */
+ .navbar-self .navbar-nav>li>a{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color:#777;
+ }
+
+.navbar-self .navbar-nav > li > a:hover,
+.navbar-self .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: #FFF;
+  border-bottom:3px solid #E92322;
+}
+
+.navbar-self .navbar-nav > .active > a,
+.navbar-self .navbar-nav > .active > a:hover,
+.navbar-self .navbar-nav > .active > a:focus {
+  color: #555;
+  background:#FFF;
+  border-bottom:3px solid #E92322;
+}
+/* 修改logo */
+.navbar-self  .logo{
+    height: 83px;
+    line-height: 54-px;
+}
+.navbar-self .wjs_icon_logo{
+    font-size:50px;
+    color:#e92322;
+    vertical-align: middle;
+}
+.navbar-self .wjs_icon_word{
+    font-size:36px;
+    vertical-align: middle;
+}
+/* 设置右侧的下拉框 */
+.navbar-self .navbar-toggle{
+    border: 1px solid #ccc;
+}
+.navbar-self .navbar-toggle .icon-bar{
+    border: 1px solid #000;
+}
+
+/* 轮播图 */
+.mybanner{
+    border-top:1px solid #ccc;
+}
+.img-pc{
+    display:block;
+    width: 100%; 
+    height: 410px;
+    background-position: center top;
+    background-repeat:no-repeat;
+}
+.img-moblie{
+    width:100%;
+    display: block;
+}
+.img-moblie img{
+    width:100%;
+}
+.deal{
+    padding-top: 56px;
+    padding-bottom: 26px;
+}
+.deal .items{
+    margin-bottom: 30px;
+}
+.deal .container{
+        width:960px;
+    }
+/* @media screen and(min-width:1200px){
+    .deal .container{
+        width:960px;
+    }
+} */
+.deal .items{
+    padding:0 50px;
+}
+.deal .media-left span{
+    font-size: 28px;
+}
+
+.order{
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.order .ordernow{
+    color:#e92322;
+    border-bottom: 1px dashed #e92322;
+}
+.order .wjs_icon_E906,
+.order .wjs_icon_E905{
+    font-size: 18px;
+}
+.video:hover{
+    color:#e92322;
+}
+
+/* 热门推荐 */
+.hot{
+    background: #f5f5f5;
+}
+.hot .nav-tabs{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hot .myhot{
+    border-bottom: 2px solid #e92322;
+}
+.hot .items{
+    height: 150px;
+    background: #fff;
+    font-size:12px;
+    margin-bottom: 20px;
+    box-shadow:2px 2px 2px #dedede;
+}
+.hot .items:first-child{
+    background: #e92322;
+    color:#fff;
+}
+.hot .items:first-child .left::before{
+    content: "\e915";
+    font-family: "wjs";
+    position: absolute;
+    font-size: 33px;
+    left: -15px;
+    top: -30px;
+}
+
+.hot h3{
+    font-size: 16px;
+}
+.hot .left{
+    width:100%;
+    padding-right:108px;
+    position: relative;
+}
+.hot .left .row p{
+   margin-bottom: 4px;
+   font-size: 12px;
+}
+.hot .items .left .row {
+     margin-left: 0; 
+     margin-right: 0; 
+}
+.hot .items .left .mybar{
+    height:10px;
+}
+
+.hot .items .right{
+    float:right;
+    width: 108px;
+    height: 150px;
+    border-left:1px dashed #ccc;
+    position: relative;
+    text-align: center;
+}
+.hot .items .right span{
+    display: block;
+}
+.hot .items .right span:first-child{
+    margin-top:30px;
+    font-size: 50px;
+}
+.hot .items .right span:first-child:after{
+   content:"%";
+   font-size:12px;
+}
+
+.hot .items .right i{
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    position: absolute;
+    left:-6px;
+    top:-6px;
+}
+.hot .items .right b{
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    position: absolute;
+    left:-6px;
+    bottom:-6px;
+}
+
+.hot .items .right .bao{
+    display: inline-block;
+    border: 1px solid red;
+    color:red;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left:50%;
+    transform:translate(-50%);
+    top:10px;
+}
+
+.hot .items .right .bei{
+    display: inline-block;
+    border: 1px solid green;
+    color:green;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left:50%;
+    transform:translate(95%);
+    top:10px;
+}
+
+/* 全部新闻 */
+.allNews{
+    background: #fff;
+    padding-top:20px;
+    /* height: 800px; */
+    margin-top: 30px;
+}
+
+.allNews h3{
+    height:30px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 10px;
+    position: relative;
+}
+ .allNews h3:after{
+   content:"";
+   display: block;
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   border: 1px solid #ccc;
+   position: absolute;
+   right:-6px;
+   top:27px; 
+}
+.allNews .nav-tabs>li.active>a, 
+.allNews .nav-tabs>li.active>a:focus,
+.allNews .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    border:1px solid transparent;
+   /*  border-bottom: 1px solid red; */
+    background-color: transparent;
+}
+.allNews .nav-tabs>li{
+    text-align: center;
+}
+.allNews .nav-tabs>li span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.allNews .nav-tabs>li:hover span{
+    background: red;
+}
+.allNews .nav-tabs {
+    border-bottom: none;
+}
+.allNews .haveLine{
+    position: relative;
+}
+.allNews  .line{
+    width: 2px;
+    height: 38px;
+    display: block;
+    /* background: #ccc; */
+    border:1px dashed #ccc;
+    position: absolute;
+    left:50%;
+    top:70px;
+}
+.allNews  .tab-content{
+    text-align: center;
+    margin-top: 20px;
+   margin-left: -40px;
+}
+.allNews  .tab-content span{
+    display: block;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:998px){
+    .allNews .tab-content span{
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+}
+
+
+/* 合作伙伴 */
+.partener{
+    background: #f5f5f5;
+}
+
+.partener p{
+    padding-top: 20px;
+    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+}
+.partener .par{
+
+}
+.partener .par span{
+    display: inline-block;
+    font-size: 55px;
+    margin:10px;
+}
